@@ -2,6 +2,7 @@
 title:  "Dato: A Task-Based Programming Model for Dataflow Accelerators"
 date:   2025-09-8
 authors: "<strong>Shihan Fang*</strong>, Hongzheng Chen*, Niansong Zhang, Jiajie Li, Han Meng, Adrian Liu, Zhiru Zhang"
+categories: [publications]
 venue: "Under Review"
 # bib: |
 #   @article{Doe2021,
