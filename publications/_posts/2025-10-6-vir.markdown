@@ -1,0 +1,16 @@
+---
+title:  "Retrofitting Control Flow Graphs in LLVM IR for Auto Vectorization"
+date:   2025-10-6
+authors: "<strong>Shihan Fang</strong>, Wenxin Zheng"
+# venue: "NeurIPS 2025"
+# bib: |
+#   @article{Doe2021,
+#     author = {Doe J.},
+#     journal = {A journal of imaginary research},
+#     title = {Another title of the publication},
+#     year = {2021}
+#   }
+links:
+  - ["arXiv", "https://arxiv.org/abs/2510.04890"]
+  # - ["code", "https://github.com/xinhao-luo/ClusterFusion"]
+---

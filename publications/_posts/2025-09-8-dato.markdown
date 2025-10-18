@@ -12,5 +12,5 @@ venue: "Under Review"
 #   }
 links:
   - ["arXiv", "https://arxiv.org/abs/2509.06794"]
-  - ["code", "https://github.com/johndoe/project"]
+  - ["code", "https://github.com/cornell-zhang/allo"]
 ---
