@@ -6,3 +6,7 @@
   link: /
   anchor: '#publications'
   highlight: false
+- name: Awards & Honors
+  link: /
+  anchor: '#awards'
+  highlight: false
