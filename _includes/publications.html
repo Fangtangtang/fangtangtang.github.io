@@ -12,8 +12,11 @@
         <div class="authors">
             {{ post.authors }}
         </div>
+        {% if post.venue %}
         <em>{{ post.venue }}</em>
         <br>
+        {% endif %}
+        <br>    
 
         {% assign need_separator = false %}
         {% if post.page_url %}

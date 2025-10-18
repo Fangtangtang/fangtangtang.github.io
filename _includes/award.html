@@ -1,0 +1,38 @@
+{% assign awards_posts = site.posts | where_exp: "post", "post.categories contains 'awards'" | sort: "date" | reverse %}
+
+{% assign competitions = awards_posts | where_exp: "post", "post.type == 'competition'" %}
+{% assign scholarships = awards_posts | where_exp: "post", "post.type == 'scholarship'" %}
+
+{% if competitions.size > 0 or scholarships.size > 0 %}
+<div class="row py-2">
+  <div class="col-md-12" id="awards">
+    <h2>Awards & Honors</h2>
+  </div>
+</div>
+{% endif %}
+
+{% if competitions.size > 0 %}
+<div class="row py-2">
+  <div class="col-md-12" id="competitions">
+    <h3>Competitions</h3>
+    <ul>
+      {% for post in competitions %}
+        <li>{{ post.title }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endif %}
+
+{% if scholarships.size > 0 %}
+<div class="row py-2">
+  <div class="col-md-12" id="scholarships">
+    <h3>Scholarships</h3>
+    <ul>
+      {% for post in scholarships %}
+        <li>{{ post.title }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endif %}
