@@ -1,0 +1,16 @@
+---
+title:  "Dato: A Task-Based Programming Model for Dataflow Accelerators"
+date:   2025-09-8
+authors: "<strong>Shihan Fang<sup>*</sup></strong>, Hongzheng Chen<sup>*</sup>, Niansong Zhang, Jiajie Li, Han Meng, Adrian Liu, Zhiru Zhang"
+venue: "Under Review"
+# bib: |
+#   @article{Doe2021,
+#     author = {Doe J.},
+#     journal = {A journal of imaginary research},
+#     title = {Another title of the publication},
+#     year = {2021}
+#   }
+links:
+  - ["arXiv", "https://arxiv.org/abs/2509.06794"]
+  - ["code", "https://github.com/johndoe/project"]
+---
