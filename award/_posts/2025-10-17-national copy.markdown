@@ -1,6 +1,5 @@
 ---
 title: "2025 Chinese National Scholarship"
-date: 2025-10-17
 categories: [awards]
 type: scholarship
 ---

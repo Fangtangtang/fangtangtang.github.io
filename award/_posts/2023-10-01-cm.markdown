@@ -1,0 +1,5 @@
+---
+title: "First Prize in the Shanghai Province, The 2023 China Undergraduate Mathematical Contest in Modeling"
+categories: [awards]
+type: competition
+---
