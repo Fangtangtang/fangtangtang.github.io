@@ -7,59 +7,50 @@
 </div>
 {% for post in publication_posts %}
 <div class="row py-2 publication">
-    <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center">
-        <img class="project-thumbnail {% if post.image_onhover %} pre-hover {% endif %}" src="{{site.baseurl}}/tn{{post.image}}" alt="project image" />
-        {% if post.image_onhover %}
-        <img class="project-thumbnail post-hover" src="{{site.baseurl}}/tn{{post.image_onhover}}" alt="project image" style="display: none;"/>
-        {% endif %}
-    </div>
-    <div class="col-md-10 col-sm-12 project-description">
-        <h3>{{post.title}}</h3>
-        <br>
+    <div class="col-12 project-description">
+        <h3>{{ post.title }}</h3>
         <div class="authors">
-            {{post.authors}}
+            {{ post.authors }}
         </div>
-
-        <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+        <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
         <br>
+
         {% assign need_separator = false %}
         {% if post.page_url %}
-        {% assign need_separator = true %}
-        <a href="{{post.page_url}}">url</a>
+            {% assign need_separator = true %}
+            <a href="{{ post.page_url }}">url</a>
         {% endif %}
         {% if post.bib %}
-        {% if need_separator %} / {% endif %}
-        {% assign need_separator = true %}
-        <a href="" data-toggle="modal" data-target="#publicationBibModal{{forloop.index}}">bib</a>
-        <div class="modal fade" id="publicationBibModal{{forloop.index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog d-md-table" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">{{post.title}}</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body code text-monospace bib-text">
-                    {{ post.bib | newline_to_br }}
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+            {% if need_separator %} / {% endif %}
+            {% assign need_separator = true %}
+            <a href="" data-toggle="modal" data-target="#publicationBibModal{{ forloop.index }}">bib</a>
+            <div class="modal fade" id="publicationBibModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog d-md-table" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{ post.title }}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body code text-monospace bib-text">
+                            {{ post.bib | newline_to_br }}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         {% endif %}
         {% if post.links %}
             {% for link in post.links %}
                 {% if need_separator %} / {% endif %}
                 {% assign need_separator = true %}
-                <a href="{{link[1]}}">{{link[0]}}</a>
+                <a href="{{ link[1] }}">{{ link[0] }}</a>
             {% endfor %}
         {% endif %}
-        <p></p>
-        {{ post.excerpt | replace: '<p', '<p class="text-justify"' }}
     </div>
 </div>
 {% endfor %}

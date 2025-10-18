@@ -1,17 +1,17 @@
 ---
-title:  "Title of the publication"
-date:   2021-07-13 09:26:00 +00:00
-# image: /publications/images/project-image.jpg
-# image_onhover: /publications/images/project-image-on-hover.jpg
-author: "John Doe"
-authors: "<strong><a href='https://vsimkus.github.io/academic-jekyll/'>John Doe</a></strong>"
-venue: "Venue"
+title: "Title of the Publication"
+date: 2021-07-13 09:26:00 +00:00
+authors: "<strong><a href='https://example.com'>John Doe</a></strong>, Jane Smith"
+venue: "A Journal of Imaginary Research"
 bib: |
   @article{Doe2021,
-    author = {Doe J.},
-    journal = {A journal of imaginary research},
-    title = {Title of the publication},
+    author = {Doe, J. and Smith, J.},
+    title = {Title of the Publication},
+    journal = {A Journal of Imaginary Research},
     year = {2021}
   }
+links:
+  - ["PDF", "https://arxiv.org/abs/xxxx.xxxxx"]
+  - ["Code", "https://github.com/johndoe/project"]
 ---
-Brief description of the project.
+Brief description of the publication (optional).
