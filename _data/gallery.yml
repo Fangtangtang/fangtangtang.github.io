@@ -1,6 +1,10 @@
 - title: "title 1"
-  image: "/images/site.jpg"
+  images:
+    - "/images/site.jpg"
+    - "/images/site.jpg"
   description: "..."
 - title: "title 2"
-  image: "/images/site.jpg"
+  image:
+    - "/images/bio.jpg"
+    - "/images/gallery-bio.jpg"
   description: "..."
