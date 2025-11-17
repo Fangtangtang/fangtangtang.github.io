@@ -10,3 +10,7 @@
   link: /
   anchor: '#awards'
   highlight: false
+- name: Gallery
+  link: /
+  anchor: '#gallery'
+  highlight: false
