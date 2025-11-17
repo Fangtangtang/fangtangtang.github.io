@@ -10,10 +10,12 @@ permalink: /gallery/
         <p class="text-justify">
             I studied calligraphy and painting, especially traditional Chinese painting, when I was a child.
             My childhood art education shaped my personality and creativity, and also the way I perceive the world.
+        </p>
+        <p class="text-justify">
             Calligraphy and painting are my personal playground for creativity and self-expression beyond academics.
         </p>
         <p class="text-justify">
-            Welcome to my magic world!
+            Welcome to my magical world!
         </p>
     </div>
     <div class="col-md-4" style="z-index:4;">
@@ -31,8 +33,7 @@ permalink: /gallery/
             <div id="carousel-{{ forloop.index }}" class="carousel slide">
                 <div class="carousel-inner">
                     {% for img in work.images %}
-                    <div class="carousel-item {% if forloop.first %}active{% endif %}"
-                        style="background-color: #EDEADE; display: flex; align-items: center; justify-content: center; min-height: 400px;">
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
                         <img src="{{ img | relative_url }}" class="d-block mx-auto"
                             style="max-width:100%; max-height:400px;" alt="{{ work.title }}">
                     </div>
@@ -46,7 +47,6 @@ permalink: /gallery/
                 </a>
             </div>
         </div>
-
 
         <div class="col-md-4 d-flex flex-column justify-content-end">
             <h3>{{ work.title }}</h3>
