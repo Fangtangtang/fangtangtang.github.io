@@ -27,33 +27,37 @@ permalink: /gallery/
 
 <div class="container py-5">
   {% for work in site.data.gallery %}
-<div class="row align-items-end mb-5 {% if forloop.index0 % 2 == 1 %}flex-column-reverse flex-md-row{% endif %}">
-
-    <div class="col-md-8">
-        <div id="carousel-{{ forloop.index }}" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                {% for img in work.images %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                    <img src="{{ img | relative_url }}" class="d-block w-100" alt="{{ work.title }}">
-                </div>
-                {% endfor %}
-            </div>
-            <a class="carousel-control-prev" href="#carousel-{{ forloop.index }}" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-{{ forloop.index }}" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
+  <div class="row align-items-end mb-5 {% if forloop.index0 % 2 == 1 %}flex-column-reverse flex-md-row{% endif %}">
+    
+    <div class="col-md-8" style="min-height:300px;">
+      <div id="carousel-{{ forloop.index }}" class="carousel slide">
+        <div class="carousel-inner">
+          {% for img in work.images %}
+          <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <img src="{{ img | relative_url }}" class="d-block w-100" alt="{{ work.title }}">
+          </div>
+          {% endfor %}
         </div>
+        <a class="carousel-control-prev" href="#carousel-{{ forloop.index }}" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-{{ forloop.index }}" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
     </div>
 
     <div class="col-md-4 d-flex flex-column justify-content-end">
-        <h3>{{ work.title }}</h3>
-        <p>{{ work.description }}</p>
+      <h3>{{ work.title }}</h3>
+      <p>{{ work.description }}</p>
     </div>
 
-</div>
+  </div>
   {% endfor %}
 </div>
 
-
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+</script>
