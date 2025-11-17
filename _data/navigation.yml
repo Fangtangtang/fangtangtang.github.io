@@ -12,5 +12,5 @@
   highlight: false
 - name: Gallery
   link: /
-  anchor: '#gallery'
+  anchor: 'gallery'
   highlight: false
