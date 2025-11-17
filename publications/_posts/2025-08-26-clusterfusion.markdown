@@ -12,6 +12,7 @@ venue: "NeurIPS 2025"
 #     year = {2021}
 #   }
 links:
+  - ["poster", "https://neurips.cc/virtual/2025/loc/san-diego/poster/116910"]
   - ["arXiv", "https://arxiv.org/abs/2508.18850"]
   - ["code", "https://github.com/xinhao-luo/ClusterFusion"]
 ---

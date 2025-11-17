@@ -1,5 +1,5 @@
 ---
-title: "Meritorious Winner, the 2024 COMAP Mathematical Contest in Modeling (MCM) and Interdisciplinary Contest in Modeling (ICM)"
+title: "2024 Meritorious Winner, COMAP Mathematical Contest in Modeling (MCM) and Interdisciplinary Contest in Modeling (ICM)"
 categories: [awards]
 type: competition
 ---

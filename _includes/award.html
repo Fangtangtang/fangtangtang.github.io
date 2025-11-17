@@ -2,6 +2,7 @@
 
 {% assign competitions = awards_posts | where_exp: "post", "post.type == 'competition'" %}
 {% assign scholarships = awards_posts | where_exp: "post", "post.type == 'scholarship'" %}
+{% assign services = awards_posts | where_exp: "post", "post.type == 'service'" %}
 
 {% if competitions.size > 0 or scholarships.size > 0 %}
 <div class="row py-2">
@@ -30,6 +31,19 @@
     <h3>Scholarships</h3>
     <ul>
       {% for post in scholarships %}
+        <li>{{ post.title }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endif %}
+
+{% if services.size > 0 %}
+<div class="row py-2">
+  <div class="col-12" id="services">
+    <h3>Academic Service</h3>
+    <ul>
+      {% for post in services %}
         <li>{{ post.title }}</li>
       {% endfor %}
     </ul>
