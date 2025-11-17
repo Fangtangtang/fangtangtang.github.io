@@ -40,12 +40,16 @@ permalink: /gallery/
                     </div>
                     {% endfor %}
                 </div>
+                {% if work.images | size > 1 %}
                 <a class="carousel-control-prev" href="#carousel-{{ forloop.index }}" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" style="filter: invert(1) opacity(0.5);" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" style="filter: invert(1) opacity(0.5);"
+                        aria-hidden="true"></span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-{{ forloop.index }}" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" style="filter: invert(1) opacity(0.5);" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" style="filter: invert(1) opacity(0.5);"
+                        aria-hidden="true"></span>
                 </a>
+                {% endif %}
             </div>
         </div>
 
