@@ -11,6 +11,6 @@
   anchor: '#awards'
   highlight: false
 - name: Gallery
-  link: /
-  anchor: 'gallery'
+  link: /gallery/
+  anchor: ''
   highlight: false
