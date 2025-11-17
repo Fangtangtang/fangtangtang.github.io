@@ -6,7 +6,7 @@ permalink: /gallery/
 
 <div class="row flex-column-reverse flex-md-row py-2">
     <div class="col-md-8" id="bio">
-        <h1> </h1>
+        <h1>Shihan's Magical World</h1>
         <p class="text-justify">
             I studied calligraphy and painting, especially traditional Chinese painting, when I was a child.
             My childhood art education shaped my personality and creativity, and also the way I perceive the world.
@@ -33,8 +33,8 @@ permalink: /gallery/
                     {% for img in work.images %}
                     <div class="carousel-item {% if forloop.first %}active{% endif %}"
                         style="background-color: #EDEADE; display: flex; align-items: center; justify-content: center; min-height: 400px;">
-                        <img src="{{ img | relative_url }}" style="max-width: 100%; max-height: 100%;"
-                            alt="{{ work.title }}">
+                        <img src="{{ img | relative_url }}" class="d-block mx-auto"
+                            style="max-width:100%; max-height:400px;" alt="{{ work.title }}">
                     </div>
                     {% endfor %}
                 </div>
