@@ -31,9 +31,10 @@ permalink: /gallery/
             <div id="carousel-{{ forloop.index }}" class="carousel slide">
                 <div class="carousel-inner">
                     {% for img in work.images %}
-                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                        <img src="{{ img | relative_url }}" class="d-block mx-auto"
-                            style="max-width:100%; max-height:400px;" alt="{{ work.title }}">
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}"
+                        style="background-color: #EDEADE; display: flex; align-items: center; justify-content: center; min-height: 400px;">
+                        <img src="{{ img | relative_url }}" style="max-width: 100%; max-height: 100%;"
+                            alt="{{ work.title }}">
                     </div>
                     {% endfor %}
                 </div>
@@ -45,6 +46,7 @@ permalink: /gallery/
                 </a>
             </div>
         </div>
+
 
         <div class="col-md-4 d-flex flex-column justify-content-end">
             <h3>{{ work.title }}</h3>

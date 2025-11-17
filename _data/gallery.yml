@@ -6,6 +6,10 @@
   description: "..."
 - title: "title 2"
   images:
+    - "/gallery/2025-2-24.jpg"
+  description: "..."
+- title: "title 3"
+  images:
     - "/gallery/2024-12-1-0.jpg"
     - "/gallery/2024-12-1-1.jpg"
     - "/gallery/2024-12-1-2.jpg"
