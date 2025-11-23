@@ -6,12 +6,6 @@
   description: | 
     Floral paintings created with watercolor using traditional Chinese painting techniques.  
     **Fun fact**: These were my first paintings made in the US, created with the Chinese brush I brought from home and watercolor paints and paper purchased here.
-- title: "Fu (2025-02)"
-  images:
-    - "/gallery/2025-2-24.jpg"
-  description: |
-    A calligraphic work featuring the character "福" (fortune), created as a 2025 New Year blessing for ACM Class. The gold-painted elements blend traditional symbolism with contemporary design: a dragon motif on the left, while the right side incorporates creative letterforms with the ACM class emblem.  
-    The letterforms are inspired by artist [XU BING](https://www.xubing.com/cn)
 - title: "Surpass (2024-12)"
   images:
     - "/gallery/2024-12-1-0.jpg"
@@ -23,3 +17,9 @@
     - "/gallery/2024-5-25-0.jpg"
     - "/gallery/2024-5-25-1.jpg"
   description: "..."
+- title: "Fu (2024-02)"
+  images:
+    - "/gallery/2024-2-24.jpg"
+  description: |
+    A calligraphic work featuring the character "福" (fortune), created as a 2024 New Year blessing for ACM Class. The gold-painted elements blend traditional symbolism with contemporary design: a dragon motif on the left, while the right side incorporates creative letterforms with the ACM class emblem.  
+    The letterforms are inspired by artist [XU BING](https://www.xubing.com/cn)
