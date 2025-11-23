@@ -55,7 +55,7 @@ permalink: /gallery/
 
         <div class="col-md-4 d-flex flex-column justify-content-end">
             <h3>{{ work.title }}</h3>
-            <p>{{ work.description }}</p>
+            <p>{{ work.description | markdownify }}</p>
         </div>
 
     </div>
