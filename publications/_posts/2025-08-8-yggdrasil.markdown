@@ -13,4 +13,5 @@ venue: "NeurIPS 2025"
 #   }
 links:
   - ["poster", "https://neurips.cc/virtual/2025/loc/san-diego/poster/119964"]
+  - ["arXiv", "https://arxiv.org/abs/2512.23858"]
 ---
