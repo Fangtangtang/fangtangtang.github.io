@@ -1,4 +1,6 @@
 {% assign publication_posts = site.posts | | where_exp: "post", "post.categories contains 'publications'" %}
+{% assign workshops = publication_posts | where_exp: "post", "post.type == 'pub'" %}
+
 {% if publication_posts.size > 0 %}
 <div class="row py-2">
     <div class="col-md-12" id="publications">
@@ -8,7 +10,7 @@
 {% for post in publication_posts %}
 <div class="row py-2 publication">
     <div class="col-12 project-description">
-        <h3>{{ post.title }}</h3>
+        <h4>{{ post.title }}</h4>
         <div class="authors">
             {{ post.authors }}
         </div>

@@ -3,6 +3,7 @@ title:  "Retrofitting Control Flow Graphs in LLVM IR for Auto Vectorization"
 date:   2025-9-6
 authors: "<strong>Shihan Fang</strong>, Wenxin Zheng"
 categories: [publications]
+type: pub
 links:
   - ["arXiv", "https://arxiv.org/abs/2510.04890"]
 ---

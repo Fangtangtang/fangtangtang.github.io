@@ -3,6 +3,7 @@ title:  "Yggdrasil: Bridging Dynamic Speculation and Static Runtime for Latency-
 date:   2025-08-8
 authors: "Yue Guan, Changming Yu, <strong>Shihan Fang</strong>, Weiming Hu, Zaifeng Pan, Zheng Wang, Zihan Liu, Yangjie Zhou, Yufei Ding, Minyi Guo, Jingwen Leng"
 categories: [publications]
+type: pub
 venue: "NeurIPS 2025"
 # bib: |
 #   @article{Doe2021,

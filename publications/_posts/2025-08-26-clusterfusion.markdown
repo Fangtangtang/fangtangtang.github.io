@@ -3,6 +3,7 @@ title:  "ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cl
 date:   2025-08-26
 authors: "Xinhao Luo, Zihan Liu, Yangjie Zhou, <strong>Shihan Fang</strong>, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo"
 categories: [publications]
+type: pub
 venue: "NeurIPS 2025"
 # bib: |
 #   @article{Doe2021,
