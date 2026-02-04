@@ -6,7 +6,6 @@ permalink: /files/
 
 <div class="container py-5">
     <h1>File Uploads</h1>
-    <p>This page lists files uploaded to the <code>uploads</code> directory.</p>
     
     <div class="list-group">
         {% assign files = site.static_files | where_exp: "item", "item.path contains 'uploads/'" %}
