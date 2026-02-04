@@ -18,7 +18,20 @@
     <h3>Competitions</h3>
     <ul>
       {% for post in competitions %}
-        <li>{{ post.title }}</li>
+        <li>
+          {{ post.title }}
+          {% if post.links %}
+            {% assign need_separator = false %}
+            (
+            {% for link in post.links %}
+              {% if need_separator %} / {% endif %}
+              {% assign need_separator = true %}
+              <a href="{{ link[1] }}">{{ link[0] }}</a>
+            {% endfor %}
+            )
+          {% endif %}
+        </li>
+        <!-- <li>{{ post.title }}</li> -->
       {% endfor %}
     </ul>
   </div>

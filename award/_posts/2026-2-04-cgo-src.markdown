@@ -1,0 +1,7 @@
+---
+title: "2026 Gold Award, The ACM Student Research Competition (SRC) at CGO"
+categories: [awards]
+type: competition
+links:
+  - ["Official Page", "https://2026.cgo.org/track/cgo-2026-student-research-competition?"]
+---
