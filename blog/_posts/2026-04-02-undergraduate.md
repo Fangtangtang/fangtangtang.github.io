@@ -19,7 +19,7 @@ categories: [blogs]
 >
 > 这项作业像是一个我之前从未接触过的赛道。面对未接触过的东西，确实挺痛苦的，但也挺刺激、挺让人激动的。我深知我没有那么强的能力，没有那么强大的内核，余下的36小时，希望“尽人事，听天命”，36小时后，希望能有热情再去探索。
 
-以上是我2024年1月9日留的朋友圈。36小时后我没能完全完成这个大工程，后续又用了些时间，让它成为了一个能跑简单向量指令的processor。不过更重要的是36小时后，直至今天，我有了更强的探索热情。
+以上是我2024年1月9日留的朋友圈。36小时后我没能完全完成这个大工程，后续又用了些时间，让它成为了一个能跑简单向量指令的processor。不过更重要的是36小时后，直至今天，我有了更高的探索热情。
 
 系统二（operating system）的大作业ACore（一个microkernel operating system）写得很爽。同样是全新的课程设计，比architecture作业更high level，因而我更容易发展自己的design，有了更大的创造空间。当时给的一个参考course project是清华rCore（一个monolithic kernel），但我似乎没太参照它的具体结构。找了些microkernel的blog，结合rCore和阿磊课上讲的一些概念，然后自己发散。24年梅雨季那段时间写得有些“痴”了，“寄生”在D19的阁楼，在镜子上画设计图神神叨叨……这个课程作业非常有成就感，尤其是后期看到一个类shell的process能在自己搭的os上跑起来，能launch process，能调度，我真的会对着屏幕赞叹“这太酷了！”这次大作业的code review非常chill，感觉不是在向助教们证明我做完了这个作业，而是向他们介绍我的成果。
 
@@ -59,4 +59,4 @@ categories: [blogs]
 
 Include images using standard markdown syntax:
 
-![sample image]({{ site.baseurl }}/gallery/2025-10-5-4.jpg) {: width="60%"}
+![sample image]({{ site.baseurl }}/gallery/2025-10-5-4.jpg){: width="60%"}
