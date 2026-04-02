@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-{% assign blog_posts = site.posts | where_exp: "post", where_exp: "post", "post.categories contains 'blogs'" | sort: "date" | reverse %}
+{% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'blogs'" | sort: "date" | reverse %}
 
 <div class="container py-4">
     <h1>Blog</h1>
