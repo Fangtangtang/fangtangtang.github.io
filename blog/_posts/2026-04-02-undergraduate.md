@@ -54,9 +54,5 @@ categories: [blogs]
 
 对未来每一年的我：“心静 心净 静心 敬心” 这是你大二开学第一天写下的“座右铭”。“先做人后做学问，从做学问中学做人”，不求你有很亮眼的成就，但希望回首每一年，你都能“问心无愧”。
 
-
-## Images
-
-Include images using standard markdown syntax:
-
-![sample image]({{ site.baseurl }}/gallery/2025-10-5-4.jpg){: width="60%"}
+![]({{ site.baseurl }}/blog/2026-04-02-3.jpg){: width="60%"}
+*Xin & Jing*
