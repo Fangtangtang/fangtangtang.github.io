@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Hello World - My First Blog Post"
 abstract: "Welcome to my blog! This is a sample post demonstrating markdown features including text, links, images, and code blocks."
 date: 2026-04-02

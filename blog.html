@@ -7,7 +7,7 @@ permalink: /blog/
 <div class="container py-4">
     <h1>Blog</h1>
 
-    {% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'blog'" | sort: "date" | reverse %}
+    {% assign blog_posts = site.posts | where_exp: "post", "post.type == 'blog'" | sort: "date" | reverse %}
     {% if blog_posts.size == 0 %}
     <p>No posts yet. Stay tuned!</p>
     {% endif %}
