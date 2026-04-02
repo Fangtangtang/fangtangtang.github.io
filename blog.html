@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="container py-4">
+    <h1>Blog</h1>
+
+    {% if site.posts.size == 0 %}
+    <p>No posts yet. Stay tuned!</p>
+    {% endif %}
+
+    {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}" class="blog-entry-link">
+        <div class="blog-entry">
+            <h2 class="blog-entry-title">{{ post.title }}</h2>
+            <p class="blog-entry-date font-small">{{ post.date | date: "%B %d, %Y" }}</p>
+            {% if post.abstract %}
+            <p class="blog-entry-abstract">{{ post.abstract }}</p>
+            {% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>

@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Hello World - My First Blog Post"
+abstract: "Welcome to my blog! This is a sample post demonstrating markdown features including text, links, images, and code blocks."
+date: 2026-04-02
+---
+
+## Welcome
+
+This is my first blog post. You can write in **markdown** style with full support for text formatting, links, images, and more.
+
+## Links
+
+You can include links like this: [My Homepage]({{ site.baseurl }}/) or external links like [GitHub](https://github.com).
+
+## Images
+
+Include images using standard markdown syntax:
+
+![sample image]({{ site.baseurl }}/images/bio.jpg)
+
+## Code
+
+You can also include code blocks:
+
+```python
+print("Hello, World!")
+```
+
+## Lists
+
+- Item one
+- Item two
+- Item three
+
+---
+
+*This is a sample post. Replace it with your own content!*
