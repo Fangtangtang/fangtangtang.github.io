@@ -7,7 +7,6 @@
 
 @import "reset";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
@@ -105,33 +104,6 @@ span.highlight {
   border-radius: 50%;
   width: 100%;
   max-width: 100%
-}
-
-.project-thumbnail-parent {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
-
-  .project-thumbnail {
-    width: auto; 
-    height: auto; 
-    max-width: 100%;
-    
-    grid-row-start: 1;
-    grid-column-start: 1;
-
-    &.pre-hover {
-      z-index:2;
-    }
-    &.post-hover {
-      z-index:1;
-    }
-
-    // @include media-breakpoint-down(sm) {
-    //   max-width: 75%;
-    // }
-  }
 }
 
 .project-description {
