@@ -16,7 +16,12 @@ permalink: /blog/
     {% for post in blog_posts %}
     <a href="{{ post.url | relative_url }}" class="blog-entry-link">
         <div class="blog-entry">
-            <h2 class="blog-entry-title">{{ post.title }}</h2>
+            <h2 class="blog-entry-title">                                                                                     
+                {% if post.type == 'tech' %}&#x1F4BB;                                                                         
+                {% elsif post.type == 'life' %}&#x1F331;                                                                      
+                {% endif %}                                                                                                   
+                {{ post.title }}                                                                                              
+            </h2>
             <p class="blog-entry-date font-small">{{ post.date | date: "%B %d, %Y" }}</p>
             {% if post.abstract %}
             <p class="blog-entry-abstract">{{ post.abstract }}</p>
