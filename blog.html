@@ -25,7 +25,7 @@ permalink: /blog/
             </h2>
             <p class="blog-entry-date font-small">{{ post.date | date: "%B %d, %Y" }}</p>
             {% if post.abstract %}
-            <p class="blog-entry-abstract">{{ post.abstract }}</p>
+            <p class="blog-entry-abstract">{{ post.abstract | newline_to_br }}</p>
             {% endif %}
         </div>
     </a>
