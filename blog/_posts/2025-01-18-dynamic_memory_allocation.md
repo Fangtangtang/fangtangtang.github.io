@@ -20,7 +20,7 @@ At an unknown future time, the process departs, freeing its allocated space for 
 Over time, this cycle of allocation and deallocation creates unused gaps, 
 or "holes", within the storage device, leading to fragmentation.
 
-![]({{ site.baseurl }}/blog/2025-01-18-0.png){: width="90%"}
+![]({{ site.baseurl }}/blog/2025-01-18-0.png){: width="80%"}
 *Figure 1: Dynamic memory allocation request from processes and corresponding graph.*
 
 The Dynamic Memory Allocation (DMA) problem is equivalent to graph coloring from problem on an undirected weighted graph $G=(V,E)$ defined as follows.
@@ -62,7 +62,7 @@ Also note that in the graph we introduced in Section 1, $k$ is the maximum cliqu
 > The main ideas of the analysis is that occupied memory slice are scattered in the memory space, 
 > but the sum of their size should not exceed the maximum simultaneously allocated memory.
 
-![]({{ site.baseurl }}/blog/2025-01-18-1.png){: width="100%"}
+![]({{ site.baseurl }}/blog/2025-01-18-1.png){: width="90%"}
 *Figure 2: Demonstration of the memory layout at certain timestamp. We partition the memory space into different segments based on allocated space of different size and use this in our analysis.*
 
 **Claim 1.** Let $Z(i)=\frac{w^{\star}}{i \ln 2}$, all requests of size $j$ will be allocated before address $\sum_{i=1}^{j}Z(i)$.
@@ -134,7 +134,7 @@ So the space before $Addr$ is $S_{wasted}+S_{used}<(c+1)\times w^{\star}$, which
 $\blacksquare$
 {: .qed}
 
-![]({{ site.baseurl }}/blog/2025-01-18-2.png){: width="70%"}
+![]({{ site.baseurl }}/blog/2025-01-18-2.png){: width="60%"}
 *Figure 3: Memory layout at certain timestamp. Memory deallocation leaves fragments in memory space with lower address. Small requests tends to fit into these fragments with lower address.*
 
 #### 2.2.1 Special case
@@ -172,7 +172,7 @@ Luby et al. [2] chose $c=4$, and derived a competitive ratio of $4+\log_2 k$.
 
 #### 2.2.2 General case
 
-![]({{ site.baseurl }}/blog/2025-01-18-3.png){: width="60%"}
+![]({{ site.baseurl }}/blog/2025-01-18-3.png){: width="55%"}
 *Figure 4: Demonstration of the reason why we can not use a scaling factor to directly derive general competitive ratio for First Fit from the special case. First Fit will put the request of size $1$ at address $3$, making a different decision from scaling the requests to the exponent of 2 to align with the special case.*
 
 For General cases, we first specify that we can not use an constant scaling factor to derive the competitive ratio from the special case.
@@ -331,7 +331,7 @@ When a memory space is deallocated, the corresponding segments will be freed.
 The merging precess follows a bottom-up approach and stop until the 'buddy' is not free or it reaches the root.
 An example of *Buddy System* allocating a memory of size $16$ for the requests in Figure 5 can be found in Figure 6.
 
-![]({{ site.baseurl }}/blog/2025-01-18-5.png){: width="100%"}
+![]({{ site.baseurl }}/blog/2025-01-18-5.png){: width="90%"}
 *Figure 6: A simple example of Binary Buddy System. The green segments are free and the orange segments are occupied to serve the requests. Note that in this example, Binary Buddy System overcome the waste shown in Coloring Algorithm.*
 
 The original *Buddy System* divide the segments into sub-segments whose sizes are powers of 2. 
@@ -398,20 +398,20 @@ We implemented four of these algorithms and do simulation experiment to evaluate
 
 ## References
 
-[1] Weinstock, Charles B and Wulf, William A. "An efficient algorithm for heap storage allocation." *ACM Sigplan Notices*, 23(10):141-148, 1988.
+[1] Weinstock, Charles B., and William A. Wulf. "An efficient algorithm for heap storage allocation." ACM Sigplan Notices 23.10 (1988): 141-148.
 
-[2] Luby, Michael G and Naor, Joseph and Orda, Ariel. "Tight bounds for dynamic storage allocation." *SIAM Journal on Discrete Mathematics*, 9(1):155-166, 1996.
+[2] Luby, Michael G., Joseph Naor, and Ariel Orda. "Tight bounds for dynamic storage allocation." SIAM Journal on Discrete Mathematics 9.1 (1996): 155-166.
 
-[3] Naor, Joseph Seffi and Orda, Ariel and Petruschka, Yael. "Dynamic storage allocation with known durations." *Discrete Applied Mathematics*, 100(3):203-213, 2000.
+[3] Naor, Joseph Seffi, Ariel Orda, and Yael Petruschka. "Dynamic storage allocation with known durations." Discrete Applied Mathematics 100.3 (2000): 203-213.
 
-[4] Puaut, I. "Real-time performance of dynamic memory allocation algorithms." *Proceedings 14th Euromicro Conference on Real-Time Systems*, pages 41-49, 2002.
+[4] Puaut, Isabelle. "Real-time performance of dynamic memory allocation algorithms." Proceedings 14th Euromicro Conference on Real-Time Systems. Euromicro RTS 2002. IEEE, 2002.
 
-[5] Garey, Michael R and Johnson, David S. *Computers and Intractability: A Guide to the Theory of NP-Completeness*. 1982.
+[5] Hartmanis, Juris. "Computers and intractability: a guide to the theory of np-completeness (michael r. garey and david s. johnson)." Siam Review 24.1 (1982): 90.
 
-[6] Robson, John M. "Worst case fragmentation of first fit and best fit storage allocation strategies." *The Computer Journal*, 20(3):242-244, 1977.
+[6] Robson, John M. "Worst case fragmentation of first fit and best fit storage allocation strategies." The Computer Journal 20.3 (1977): 242-244.
 
-[7] Knuth, Donald E. *The Art of Computer Programming: Fundamental Algorithms*, Volume 1. Addison-Wesley Professional, 1997.
+[7] Knuth, Donald E. The Art of Computer Programming: Fundamental Algorithms, Volume 1. Addison-Wesley Professional, 1997.
 
-[8] Hirschberg, Daniel S. "A class of dynamic memory allocation algorithms." *Communications of the ACM*, 16(10):615-618, 1973.
+[8] Hirschberg, Daniel S. "A class of dynamic memory allocation algorithms." Communications of the ACM 16.10 (1973): 615-618.
 
-[9] Knowlton, Kenneth C. "A fast storage allocator." *Communications of the ACM*, 8(10):623-624, 1965.
+[9] Knowlton, Kenneth C. "A fast storage allocator." Communications of the ACM 8.10 (1965): 623-624.
